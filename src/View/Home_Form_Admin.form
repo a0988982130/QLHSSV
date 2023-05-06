@@ -53,7 +53,7 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <Component id="menu1" min="-2" max="-2" attributes="0"/>
+                  <Component id="menuAdmin1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
@@ -75,7 +75,7 @@
                   <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                   <Component id="body" pref="634" max="32767" attributes="0"/>
               </Group>
-              <Component id="menu1" alignment="0" max="32767" attributes="0"/>
+              <Component id="menuAdmin1" alignment="0" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
       </Layout>
@@ -105,7 +105,7 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
         </Container>
-        <Component class="CustomCompoment.Menu" name="menu1">
+        <Component class="CustomCompoment.MenuAdmin" name="menuAdmin1">
         </Component>
       </SubComponents>
     </Container>

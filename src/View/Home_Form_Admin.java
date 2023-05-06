@@ -31,7 +31,7 @@ public class Home_Form_Admin extends javax.swing.JFrame {
         panelBorder1 = new CustomSwing.PanelBorder();
         jLabel2 = new javax.swing.JLabel();
         body = new javax.swing.JLayeredPane();
-        menu1 = new CustomCompoment.Menu();
+        menuAdmin1 = new CustomCompoment.MenuAdmin();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -62,7 +62,7 @@ public class Home_Form_Admin extends javax.swing.JFrame {
         panelBorder1Layout.setHorizontalGroup(
             panelBorder1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelBorder1Layout.createSequentialGroup()
-                .addComponent(menu1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(menuAdmin1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
                 .addGroup(panelBorder1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelBorder1Layout.createSequentialGroup()
@@ -78,7 +78,7 @@ public class Home_Form_Admin extends javax.swing.JFrame {
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
                 .addComponent(body, javax.swing.GroupLayout.DEFAULT_SIZE, 634, Short.MAX_VALUE))
-            .addComponent(menu1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(menuAdmin1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -101,8 +101,8 @@ public class Home_Form_Admin extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel2MouseClicked
     
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
-        menu1.setSelectedIndex(0);
-        menu1.addEvent(new EventMenu() {
+        menuAdmin1.setSelectedIndex(0);
+        menuAdmin1.addEvent(new EventMenu() {
             @Override
             public void menuIndexChange(int index) {
                 switch(index)
@@ -177,7 +177,7 @@ public class Home_Form_Admin extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLayeredPane body;
     private javax.swing.JLabel jLabel2;
-    private CustomCompoment.Menu menu1;
+    private CustomCompoment.MenuAdmin menuAdmin1;
     private CustomSwing.PanelBorder panelBorder1;
     // End of variables declaration//GEN-END:variables
 }

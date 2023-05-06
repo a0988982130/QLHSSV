@@ -1,8 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
+
 package CustomCompoment;
 
 import CustomShadow.ShadowBorder;
@@ -17,8 +14,8 @@ import org.jdesktop.animation.timing.Animator;
 import org.jdesktop.animation.timing.TimingTarget;
 import org.jdesktop.animation.timing.TimingTargetAdapter;
 
-public class Menu extends PanelShadow {
-    
+
+public class MenuAdmin extends PanelShadow {
     private int selectedIndex = -1;
     private double menuTarget;
     private double menuLastTarget;
@@ -28,7 +25,7 @@ public class Menu extends PanelShadow {
     private EventMenuCallBack callBack;
     private EventMenu event;
     
-    public Menu() {
+    public MenuAdmin() {
         initComponents();
         setBackground(new Color(242, 246, 253));
         initData();
@@ -37,7 +34,7 @@ public class Menu extends PanelShadow {
             public void menuSelected(int index, EventMenuCallBack callBack) {
                 if (!animator.isRunning()) {
                     if (index != selectedIndex) {
-                        Menu.this.callBack = callBack;
+                        MenuAdmin.this.callBack = callBack;
                         selectedIndex = index;
                         menuTarget = selectedIndex * 50 + listMenu.getY();
                         animator.start();
@@ -71,13 +68,14 @@ public class Menu extends PanelShadow {
 
      private void initData() {
         listMenu.addItem(new Model.Menu("1", "Account", Model.Menu.MenuType.MENU));
-        listMenu.addItem(new Model.Menu("2", "Majors", Model.Menu.MenuType.MENU));
-        listMenu.addItem(new Model.Menu("3", "Course", Model.Menu.MenuType.MENU));
-        listMenu.addItem(new Model.Menu("4", "Class", Model.Menu.MenuType.MENU));
-        listMenu.addItem(new Model.Menu("5", "Student", Model.Menu.MenuType.MENU));
-        listMenu.addItem(new Model.Menu("6", "Contact", Model.Menu.MenuType.MENU));
-        listMenu.addItem(new Model.Menu("7", "Training", Model.Menu.MenuType.MENU));
-        listMenu.addItem(new Model.Menu("8", "Ratings", Model.Menu.MenuType.MENU));
+        listMenu.addItem(new Model.Menu("2", "Employee", Model.Menu.MenuType.MENU));
+        listMenu.addItem(new Model.Menu("3", "Majors", Model.Menu.MenuType.MENU));
+        listMenu.addItem(new Model.Menu("4", "Course", Model.Menu.MenuType.MENU));
+        listMenu.addItem(new Model.Menu("5", "Class", Model.Menu.MenuType.MENU));
+        listMenu.addItem(new Model.Menu("6", "Student", Model.Menu.MenuType.MENU));
+        listMenu.addItem(new Model.Menu("7", "Contact", Model.Menu.MenuType.MENU));
+        listMenu.addItem(new Model.Menu("8", "Training", Model.Menu.MenuType.MENU));
+        listMenu.addItem(new Model.Menu("9", "Ratings", Model.Menu.MenuType.MENU));
         listMenu.addItem(new Model.Menu("", "", Model.Menu.MenuType.EMPTY));
     }
 
@@ -113,18 +111,13 @@ public class Menu extends PanelShadow {
      public void addEvent(EventMenu event) {
         this.event = event;
     }
-      
-      
-      
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         listMenu = new CustomSwing.ListMenu<>();
         profile2 = new CustomCompoment.Profile();
-
-        setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(25, 118, 211), new java.awt.Color(25, 118, 211), new java.awt.Color(25, 118, 211), new java.awt.Color(25, 118, 211)));
-        setForeground(new java.awt.Color(25, 118, 211));
 
         listMenu.setOpaque(false);
 
@@ -137,7 +130,7 @@ public class Menu extends PanelShadow {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(listMenu, javax.swing.GroupLayout.DEFAULT_SIZE, 223, Short.MAX_VALUE)
                     .addComponent(profile2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(18, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -145,18 +138,14 @@ public class Menu extends PanelShadow {
                 .addGap(25, 25, 25)
                 .addComponent(profile2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(listMenu, javax.swing.GroupLayout.DEFAULT_SIZE, 449, Short.MAX_VALUE)
+                .addComponent(listMenu, javax.swing.GroupLayout.DEFAULT_SIZE, 417, Short.MAX_VALUE)
                 .addGap(0, 0, 0))
         );
     }// </editor-fold>//GEN-END:initComponents
-
-  
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private CustomSwing.ListMenu<String> listMenu;
     private CustomCompoment.Profile profile2;
     // End of variables declaration//GEN-END:variables
-
-  
 }
