@@ -20,7 +20,10 @@ public class Connect {
        //driver
        Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
        //khai báo chuỗi url
-       String connectionURL = "jdbc:sqlserver://LAPTOP-A8DMS1GU\\SQLEXPRESS;database=Quan_ly_SV;portNumber=1433;encrypt=true;trustServerCertificate=true";
+       //Laptop huy
+//       String connectionURL = "jdbc:sqlserver://LAPTOP-A8DMS1GU\\SQLEXPRESS;database=Quan_ly_SV;portNumber=1433;encrypt=true;trustServerCertificate=true";
+        //Laptop khoa
+        String connectionURL = "jdbc:sqlserver://LAPTOP14\\SQLEXPRESS;database=Quan_ly_SV;portNumber=1433;encrypt=true;trustServerCertificate=true";
        //khai báo tk, mk
        String user = "sa";
        String password = "123";
